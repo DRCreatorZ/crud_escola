@@ -6,9 +6,8 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class IndexController {
-
-    // metodo
-
+    
+    //método
     @GetMapping("/")
     public ModelAndView abrirIndex() {
         ModelAndView mv = new ModelAndView("index");
@@ -19,4 +18,15 @@ public class IndexController {
         ModelAndView mv = new ModelAndView("index");
         return mv;
     }
+    @GetMapping("/login-adm")//endereço da pagina no site
+    public ModelAndView abrirLoginAdm() {
+        ModelAndView mv = new ModelAndView("adm/login-adm");
+        return mv;
+    }
+    @GetMapping("/cad-adm")//endereço da pagina no site
+    public ModelAndView abrirCadAdm() {
+        ModelAndView mv = new ModelAndView("adm/cad-adm");
+        return mv;
+    }
+
 }
