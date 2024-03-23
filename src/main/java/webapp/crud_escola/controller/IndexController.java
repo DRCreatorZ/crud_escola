@@ -1,4 +1,4 @@
-package webapp.crud_escola.controller;
+package webapp.crud_escola.Controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
